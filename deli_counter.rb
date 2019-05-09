@@ -4,7 +4,7 @@ def line(queue)
     puts "The line is currently empty."
   else
     message = "The line is currently:"
-    queue.each_with_index do |name, index| 
+    queue.each do |name, index| 
     message += " #{index.to_i+1}. #{name}"
   end 
   puts "#{message}"
